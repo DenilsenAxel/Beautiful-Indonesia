@@ -1,0 +1,423 @@
+body {
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.125rem;
+    background-color: #fff5e8;
+}
+
+/*  ===========
+    Typography 
+    ===========  */
+
+h3 {
+    font-size: 1.25rem;
+}
+
+ul {
+    color: #fff;
+    list-style: none;
+    padding-left: 0;
+}
+
+li a { 
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    left: 1px;
+    transition: color .3s;
+}
+
+li a:hover,
+li a:focus {
+    color: #00C9FF;
+}
+
+.nav-title a {
+    font-family: 'Dancing Script', cursive;
+    color: #fff;
+    font-size: 1.75rem;
+    text-decoration: none;
+}
+
+.title {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    text-align: center;
+    margin: 1.25em;
+}
+
+.post-subtitle,
+.post-date {
+    font-size: .75rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.email-btn,
+.subscribe-btn {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1rem;
+}
+
+.btn {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.destination-btn {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: .7rem;
+}
+
+.subscribe-title {
+    color: white;
+}
+
+.socials-content a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: color .3s;
+}
+
+.socials-content a:hover,
+.socials-content a:focus {
+    color: #00C9FF;
+}
+
+.footnotes p a {
+    transition: .3s;
+    color: white;
+    text-decoration: none;
+}
+
+.footnotes p a:hover,
+.footnotes p a:focus {
+    color: #00C9FF;
+}
+
+/*  ===========
+    Layout 
+    ===========  */
+
+nav {
+    background: #000;
+}
+
+.container {
+    margin: 0 auto;
+    width: 85%;
+    max-width: 1200px;
+}
+
+.nav-container {
+    padding: 0.5em 1.25em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-title,
+ul {
+    margin: 0;
+}
+
+ul {
+    display: flex;
+}
+
+li {
+    margin-left: 1.5em;
+}
+
+.destination-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0.5em;
+    width: 100%;
+}
+
+.destination-post-1,
+.destination-post-2,
+.destination-post-3,
+.destination-post-4 {
+    padding: 1.75em;
+    width: 275px;
+    height: 275px;
+    margin-bottom: 2.25em;
+    transform: scale(1);
+    transition: .2s;
+}
+
+.destination-post-1:hover,
+.destination-post-2:hover,
+.destination-post-3:hover,
+.destination-post-4:hover,
+.destination-post-1:focus,
+.destination-post-2:focus,
+.destination-post-3:focus,
+.destination-post-4:focus {
+    transform: scale(1.07);
+}
+
+.destination-post-1 {
+    background-image: url(../images/labuanbajo.jpg);
+    background-size: cover;
+}
+
+.destination-post-2 {
+    background-image: url(../images/bali.jpg);
+    background-size: cover;
+}
+
+.destination-post-3 {
+    background-image: url(../images/rajaampat.jpg);
+    background-size: cover;
+}
+
+.destination-post-4 {
+    background-image: url(../images/lolai.jpg);
+    background-size: cover;
+}
+
+.overlay {
+    background: rgba(255, 255, 255, 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.post-subtitle {
+    order: -1;
+    margin-bottom: .75em;
+}
+
+.post-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.post-date {
+    margin-top: .75em;
+}
+
+.btn {
+    border: 1px solid #000;
+    border-radius: 50px;
+    transition: 0.4s;
+}
+
+.destination-btn {
+    padding: 0.5em 1em;
+    margin-top: .75em;
+    transform: scale(1);
+    transition: .15s;
+}
+
+.destination-btn:hover,
+.destination-btn:focus {
+    color: #fff;
+    background: #000;
+    transform: scale(1.1);
+}
+
+.instagram {
+    background-color: #ff9f1c;
+    padding: 1.5em 0;
+    margin: 0;
+}
+
+.instagram h2 {
+    margin-top: 0;
+    margin-bottom: .75em;
+}
+
+.instagram h2 a {
+    text-decoration: none;
+    color: black;
+    transform: scale(1);
+    transition: all .3s;
+}
+
+.instagram h2 a:hover,
+.instagram h2 a:focus {
+    color: white;
+    opacity: 0.7;
+    font-size: larger;
+}
+
+.instagram-container {
+    width: 100%;
+    max-height: 250px;
+    display: flex;
+    align-items: stretch;
+}
+
+.instagram-container img {
+    width: 20%;
+    object-fit: fill;
+}
+
+footer {
+    background: black;
+    margin: 0;
+    padding: 1.25em;
+}
+
+footer .title {
+    color: #fff;
+    margin: 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.socials-container {
+    display: flex;
+    flex-direction: column;;
+}
+
+.socials-container h2 {
+    margin-bottom: 1em;
+}
+
+.socials-content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1em .25em;
+    justify-content: space-between;
+}
+
+.socials-box {
+    width: 30%;
+    text-align: center;
+}
+
+.subscribe-container,
+.socials-container {
+    width: 50%;
+}
+
+.subscribe-container {
+    text-align: center;
+} 
+
+.subscribe-content {
+    border: 2px dashed white;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.subscribe-container h2 {
+    margin-bottom: 1em;
+}
+
+.subscribe-title {
+    margin-bottom: 1em;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+form {
+    margin-bottom: 2em;
+}
+
+input,
+button {
+    font-family: 'Quicksand', sans-serif;
+    border: white 1px solid;
+    border-radius: 50px;
+    text-transform: uppercase;
+    text-align: center;
+    width: 90%;
+    padding: 1em 0;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    box-sizing: border-box;
+}
+
+input {
+    background-color: white;
+    margin: 1em;
+}
+
+button {
+    background-color: black;
+    color: white;
+    transition: .3s;
+}
+
+button:hover,
+button:focus {
+    background-color: #00C9FF;
+    border-color: #00C9FF;
+}
+
+.footnotes {
+    font-weight: 600;
+    font-size: .75rem;
+    color: white;
+    text-align: center;
+    margin-top: 4em;
+    margin-bottom: 0;
+    letter-spacing: 1px;
+}
+
+@media (max-width: 1000px) {
+    .destination-container {
+        width: 80%;
+    }
+
+    .destination-post-1,
+    .destination-post-2,
+    .destination-post-3,
+    .destination-post-4 {
+        width: 260px;
+        height: 260px;
+    }
+}
+
+@media (max-width: 800px) {
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .subscribe-container,
+    .socials-container {
+        width: 100%;
+    }
+
+    .subscribe-container {
+        order: -1;
+        margin-bottom: 1em;
+    }
+
+    .nav-container {
+        flex-direction: column;
+    }
+
+    ul {
+        margin-top: 1em;
+        display: flex;
+        width: 75%;
+        justify-content: space-evenly;
+    }
+
+    li {
+        margin-left: 0;
+    }
+}   
